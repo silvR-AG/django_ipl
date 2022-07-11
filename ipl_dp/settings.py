@@ -81,7 +81,7 @@ DATABASES = {
 
         'ENGINE': 'django.db.backends.postgresql',
 
-        'NAME': 'DJANGO_DP',
+        'NAME': 'Django_IPL',
 
         'USER': 'postgres',
 

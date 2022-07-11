@@ -26,7 +26,7 @@ class matches(models.Model):
     umpire3 = models.CharField(max_length=200, null=True)
 
 class deliveries(models.Model):
-    match = models.ForeignKey(matches, on_delete=models.CASCADE)
+    match_id = models.IntegerField()
     inning = models.CharField(max_length=200, null=True)
     batting_team = models.CharField(max_length=200, null=True)
     bowling_team = models.CharField(max_length=200, null=True)
@@ -47,7 +47,6 @@ class deliveries(models.Model):
     player_dismissed = models.CharField(max_length=200, null=True)	
     dismissal_kind = models.CharField(max_length=200, null=True)	
     fielder = models.CharField(max_length=200, null=True)
-    id = models.IntegerField(max_length=200, primary_key=True)
 
 # class extra_runs(models.Model):
 # class eco_bowl(models.Model):
